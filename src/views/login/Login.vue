@@ -49,8 +49,8 @@ const useLoginEffect = showToast => {
     } catch (e) {
       showToast('请求失败')
       // 没有登录接口可以放出，直接登录
-      // localStorage.isLogin = true
-      // router.push({ name: 'Home' })
+      localStorage.isLogin = true
+      router.push({ name: 'Home' })
     }
   }
   localStorage.isLogin = true
